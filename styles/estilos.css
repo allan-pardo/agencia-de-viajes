@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(140, 211, 234);
+    color: blueviolet;
+}
+.nav{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 30px 250px 50px 250px;
+}
+header{
+    text-align: center;
+}
+nav li{
+    display: inline;
+    padding: 60px;
+    font-size: 25px;
+}
+.estandar{
+    width: 100px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
