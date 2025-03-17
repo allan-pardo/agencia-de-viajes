@@ -1,25 +1,117 @@
-body{
-    background-color: rgb(140, 211, 234);
-    color: blueviolet;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.nav{
-    background-color: rgb(255, 255, 255);
-    border: 3px solid black;
-    border-radius: 15px;
-    margin: 30px 250px 50px 250px;
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f3f3f3;
+    line-height: 1.6;
 }
-header{
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100px;
+    border-radius: 70px;
+}
+
+/* ====== Encabezado ====== */
+header {
+    background: #E6BEAE;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
-nav li{
-    display: inline;
-    padding: 60px;
-    font-size: 25px;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
-.estandar{
-    width: 100px;
+
+/* ====== Menú de Navegación ====== */
+nav {
+    background: #D5B192;
+    text-align: center;
+    padding: 10px 0;
 }
-nav a{
-    text-decoration: none;
-    color: black;
+nav li a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #d69862;
+}
+
+/* ====== Sección Principal ====== */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #D5B192;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ====== Clases Destacadas ====== */
+.clases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.clase {
+    background: #E8F5E9;
+    border: 1px solid #C8E6C9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.clase img {
+    width: 100%;
+    display: block;
+}
+.clase-content {
+    padding: 15px;
+}
+.clase h3 {
+    color: #D5B192;
+    margin-bottom: 10px;
+}
+.clase p {
+    margin-bottom: 15px;
+}
+.clase span {
+    display: inline-block;
+    background: #D5B192;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* ====== Pie de Página ====== */
+footer {
+    background: #BC7C9C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: #A5D6A7;
 }
